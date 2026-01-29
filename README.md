@@ -1,4 +1,4 @@
-#First Java file
+## First Java file
     - debe haber una <strong>class</strong> que coincida con el nombre del archivo
 
     - dentro de esa class va lo principal de los archivos java: <em>main method</em>:
