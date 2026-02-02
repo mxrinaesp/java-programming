@@ -52,3 +52,19 @@
 
             -le doy a intro, y el terminal me devuelve el resultado:
                 ~/Escritorio/....$  java ex113.java 8 9 72
+
+
+## Print statements
+    - tenemos 3 print statements. El comando es system.out.print. Out es de output:
+        System.out.print("Coffee");
+        System.out.print("Small 1.00");
+        System.out.print("Large 2.00");
+
+    - así, van a salir todas las palabras juntas. Para que cada comando aparezca en líneas diferentes, usar println:
+        System.out.println("Coffee");
+
+    - para que haya un espacio mayor entre las palabras, usar \t (tab):
+        System.out.println("Small\t 1.00");
+
+    - para separar dos palabra en dos líneas sin hacer dos print statements separados, usar \n (new line):
+        System.out.println("Large\n 2.00");
