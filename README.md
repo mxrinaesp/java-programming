@@ -88,3 +88,12 @@
     - para que la clase Scanner funcione, hay que escribir en la primera línea del archivo:
         import java.util.Scanner
     
+
+## Variables in blocks
+    - para que el system.out funcione, la variable (salesTax) debe estar dentro del mismo bloque de código donde se declaró: 
+        if (location ==  "Utah") {
+            double salesTax = .047;
+            System.out.println("Your sales tax rate is " + salesTax * 100 + "%.");
+        }
+
+    Si la sacáramos del bloque del if, daría error, aunque estuviera dentro del main.
