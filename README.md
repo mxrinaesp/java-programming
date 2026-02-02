@@ -22,3 +22,33 @@
     - ejecutamos el código:
         System.out.println(product1.name) o (product1.type)
     y nos aparece el nombre o tipo de ese ejemplo en el output
+
+
+## Command-line arguments
+    -podemos run code de dos maneras desde el terminal:
+
+        * sin argument:
+                ~/Escritorio/....$  javac ex112.java (java compiler + file name)
+                                    java ex112.java 
+    
+        * con argument (porque vamos a multiplicar números): 
+            - abro el archivo nuevo (ex113.java):
+                    Dentro del archivo hay
+
+                        public static void main (String args[]) {
+                            String zero = args [0];
+                            String one = args [1];
+
+                            System.out.println(Integer.parseInt(zero) * Integer.parseInt(one));
+                        }
+
+                    Lo cual significa que hay dos elementos de texto (strings). Al ejecutarlos, Integer.parseInt "transforma" esos textos en números y permite hacer el cálculo.
+
+            - compilo los cambios e información del archivo:
+                ~/Escritorio/....$  javac ex113.java 
+
+            - en el terminal escribo el comando y los números que quiero calcular:
+                ~/Escritorio/....$  java ex113.java 8 9
+
+            -le doy a intro, y el terminal me devuelve el resultado:
+                ~/Escritorio/....$  java ex113.java 8 9 72
