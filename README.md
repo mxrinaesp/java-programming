@@ -68,3 +68,23 @@
 
     - para separar dos palabra en dos líneas sin hacer dos print statements separados, usar \n (new line):
         System.out.println("Large\n 2.00");
+
+
+## Import and use the Scanner class
+    - creamos un nuevo objeto ("in") dentro de la clase Scanner (sirve para leer lo que escribimos con el teclado):
+        Scanner in = new Scanner(System.in);
+
+    - al run code, va a salir una pregunta:
+        System.out.println("Thank you for visiting us. What is your name?");
+
+    - esto significa que el "in" que hemos creado va a leer una línea completa de texto que escribamos en el terminal y se va a guardar en name:
+        String name = in.nextLine();
+
+        Por eso, después del run code, si contestamos a la pregunta con "Marina", el "in" va a leer eso y ...
+
+    - ... va a devolver esta frase con "Marina":
+        System.out.println("Welcome, " + name);
+
+    - para que la clase Scanner funcione, hay que escribir en la primera línea del archivo:
+        import java.util.Scanner
+    
