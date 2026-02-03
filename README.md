@@ -97,3 +97,28 @@
         }
 
     Si la sacáramos del bloque del if, daría error, aunque estuviera dentro del main.
+
+
+## Variables in methods
+    - aquí java no compilará porque el double está solo en el bloque del if:
+                if (location == "Utah") {
+                double salesTax = .047;
+                }
+                else {
+                    salesTax = .05;
+                }
+
+    - para que funcione, hay que escribir el double en el main y luego sí la variable (salesTax) en cada bloque:
+        public static void main (String args []){
+            String location = "Utah";
+            double salesTax = .00;
+
+                if (location == "Utah") {
+                    salesTax = .047;
+                }
+                else {
+                    salesTax = .05;
+                }
+        }
+        
+    Usamos el double antes de la variable porque son números decimales; String cuando es texto e int cuando son números enteros.
