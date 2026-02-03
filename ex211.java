@@ -10,7 +10,7 @@ This is a code example of variables
         double price = 8.99;
         short qtySold = 3000;
         long annualQtySold = 36000l; // ends with l to differ from int
-        float costPerOz = .49f; // ends with f to differ from double
+        float costPerOz = .49f; // " f " from double. For large decimals, use double instead
         boolean caffeine = true; // true or false
     }
 }
