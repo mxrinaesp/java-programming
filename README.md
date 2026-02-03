@@ -120,5 +120,18 @@
                     salesTax = .05;
                 }
         }
-        
+
     Usamos el double antes de la variable porque son números decimales; String cuando es texto e int cuando son números enteros.
+
+
+## Variables in classes
+    - cuando tenemos dos (o más) methods y la variable se utiliza en todos o algunos de ellos, se debe declarar justo debajo de la clase (como una propiedad):
+        class ex131c {
+            static double salesTax = 0;
+        }
+
+    - en el segundo method, no escribimos void porque aquí se devuelve un valor y el otherStates() sería el nombre del método (como main):
+        public static double otherStates() {
+            salesTax = .05;
+            return salesTax;
+        }    
