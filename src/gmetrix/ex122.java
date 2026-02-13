@@ -1,3 +1,4 @@
+package src.gmetrix;
 import java.util.Scanner;
 
 class ex122 {

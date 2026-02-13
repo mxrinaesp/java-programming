@@ -1,3 +1,4 @@
+package src.udemy.secao03;
 import java.util.Scanner;
 
 public class EjercicioEntrada5 {

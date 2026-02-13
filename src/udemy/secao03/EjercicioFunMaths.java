@@ -1,3 +1,4 @@
+package src.udemy.secao03;
 public class EjercicioFunMaths  {
     public static void main (String [] args) {
         

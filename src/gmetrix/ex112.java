@@ -1,3 +1,4 @@
+package src.gmetrix;
 class ex112 {
     public static void main (String args[]) {
         Product product1 = new Product("Coffee", "Medium Roast", 9.99);

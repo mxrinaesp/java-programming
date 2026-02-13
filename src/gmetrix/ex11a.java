@@ -1,3 +1,4 @@
+package src.gmetrix;
 class ex11a {
 
     public static void main (String args []){

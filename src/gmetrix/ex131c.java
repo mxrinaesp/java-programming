@@ -1,3 +1,4 @@
+package src.gmetrix;
 class ex131c {
     static double salesTax = 0;
 
