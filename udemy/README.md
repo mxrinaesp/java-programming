@@ -86,3 +86,38 @@ a %= b -----> a = a % b;
         break;
 
     }
+
+# Sección 5 - Extructura Repetitiva
+
+## Estructura while: (no se sabe previamente el nº de repeticiones)
+    while (condición) {
+        comando 1
+        comando 2
+    }
+si la condición es V, ejecuta los comandos y vuelve a la condición;
+si la condición es F, salta fuera de la estructura y no ejecuta los comandos;
+
+VIP: preguntar siempre cuál es la condición para que se mantenga el loop (ayuda a saber qué poner dentro de los paréntesis de while);
+
+## Estructura for: (se sabe el nº de repeticiones)
+    for (inicio; condición; incremento) {
+        comando 1
+        comando 2
+    }
+
+inicio: solo se ejecuta la primera vez;
+condición: = a while;
+incremento: ejecuta cada vez que dé la vuelta;
+
+### cuenta regresiva
+    for (int i=4; i>=0; i--) {
+        System.out.println("valor de i: " + i);
+    }
+
+## Estructura do-while: 
+    do {
+        comando 1
+        comando 2
+    } while (condición);
+
+El bloque de comandos se ejecuta una vez OBLIGATORIAMENTE, y si la condición fuera V, se repite, si no, salta fuera.
