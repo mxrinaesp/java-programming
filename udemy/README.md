@@ -121,3 +121,47 @@ incremento: ejecuta cada vez que dé la vuelta;
     } while (condición);
 
 El bloque de comandos se ejecuta una vez OBLIGATORIAMENTE, y si la condición fuera V, se repite, si no, salta fuera.
+
+
+# Sección 6 - Vectores
+
+Un vector o array unidimensional es una colección de datos de tamaño fijo, indexada (acceso a elementos por medio de índices) y homogénea (datos del mismo tipo).
+
+La primera posición de un vector en Java es 0.
+El vector debe guardarse antes de utilizarse y una vez guardado, su qtd de elementos es fija.
+
+## Cómo crear un vector
+
+Declaración:
+    int[] A;               declaración de un vector de números enteros llamado A.
+
+    String[] B;            declaración de un vector de texto llamado B.
+
+Instancia:
+    A = new int[10];        creación de un nuevo vector con 10 números enteros (de 0 a 9).
+
+    B = new String[8];      creación de un vector de Strings con posición de 0 a 7.
+
+## Cómo acceder a los elementos de un vector
+
+    A[3] = 10;                          colocar el valor 10 en la posición 3 del vector A.
+       
+
+    for (int i=0; i<5; i++) {           en el vector A, posición 0, entrará el valor 10...
+        A[i] = i + 10;                                           1, entrará el valor 11...
+    }                                   y así hasta que la posición 4 porque i<5.
+
+
+## Estructura for each: tipo de vector + mote + : + nombre de la colección
+
+En vez de usar:                                    Tenemos la String[] ciudades y creamos una variable i
+    for (int i=0; i < N; i++) {                    para hacer la cuenta.
+        System.out.println(ciudades[i]);
+    }
+
+Usamos:
+    for (String c : ciudades) {                    Para cada String c(o cualquier otro nombre que funcione 
+        System.out.println(c);                     como mote de cada elemento del vector) dentro del vector ciudades.
+    }
+
+Sirve para recorrer una colección entera sin tener que hacer el for(int i=0;i< N;i++) { ciudades[i]; }
