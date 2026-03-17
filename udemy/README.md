@@ -128,7 +128,7 @@ El bloque de comandos se ejecuta una vez OBLIGATORIAMENTE, y si la condición fu
 Un vector o array unidimensional es una colección de datos de tamaño fijo, indexada (acceso a elementos por medio de índices) y homogénea (datos del mismo tipo).
 
 La primera posición de un vector en Java es 0.
-El vector debe guardarse antes de utilizarse y una vez guardado, su qtd de elementos es fija.
+El array debe guardarse antes de utilizarse y una vez guardado, su qtd de elementos es fija.
 
 ## Cómo crear un vector
 
@@ -165,3 +165,37 @@ Usamos:
     }
 
 Sirve para recorrer una colección entera sin tener que hacer el for(int i=0;i< N;i++) { ciudades[i]; }
+
+
+# Sección 7 - Matrices
+
+Una matriz o array bidimensional(líneas y columnas) es una colección de datos de tamaño fijo, indexada (acceso a elementos por medio de índices) y homogénea (datos del mismo tipo).
+
+La primera posición de una matriz en Java es 0,0 (línea 0, columna 0).
+El array debe guardarse antes de utilizarse y una vez guardado, su qtd de elementos es fija.
+
+## Cómo crear una matriz
+
+Declaración:
+    int[][] A;               declaración de una matriz de números enteros llamada A.
+
+    String[][] B;            declaración de una matriz de texto llamada B.
+
+Instancia:
+    A = new int[2][3];        creación de una nueva matriz que recibe 2 líneas y 3 columnas.
+
+    B = new String[8][4];      creación de una matriz de Strings que recibe 8 líneas y 4 columnas
+
+## Cómo acceder a los elementos de una matriz
+
+    A[2][3] = 10;                       colocar el valor 10 en la línea 2, columna 3 de la matriz A.
+       
+
+    for (int i=0; i<2; i++) {           en la matriz A, línea 0, columna 0, entrará el valor sc...
+        for (int j=0; j<3; j++) {                                        1, entrará el valor sc...
+            A[i][j] = sc.nextInt();                                      2, entrará el valor sc... porque j<3.
+        }                                                     1, columna 0, entrará el valor sc...
+    }                                   
+
+
+La diagonal principal de una matriz es mat[i][i];
